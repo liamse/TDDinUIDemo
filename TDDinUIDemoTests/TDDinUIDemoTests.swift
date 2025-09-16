@@ -38,7 +38,7 @@ struct TDDinUIDemoTests {
             of: controller,
             as: .image(on: config.device),
             named: config.name,
-            record: true
+            record: false
         )
     }
 
@@ -57,7 +57,7 @@ struct TDDinUIDemoTests {
             of: controller,
             as: .image(on: config.device),
             named: config.name,
-            record: true
+            record: false
         )
     }
 }
