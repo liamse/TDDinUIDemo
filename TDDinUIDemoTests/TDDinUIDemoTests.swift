@@ -42,6 +42,24 @@ struct TDDinUIDemoTests {
         )
     }
 
+    
+    // MARK: - Snapshot tests for TextView on iPad
+    @Test("a TextView on iPad - light/dark Mode - Portrait/Landscape", arguments: Device.iPadPro11.config)
+    func textView_iPad(_ config: (name: String, device: ViewImageConfig, theme: UIUserInterfaceStyle)) async throws {
+        
+        // Create a hosting controller for the SwiftUI view
+        let controller = UIHostingController(rootView: TextView(text: .constant(text)))
+        
+        // Apply the UI theme (light/dark) from the test configuration
+        controller.overrideUserInterfaceStyle = config.theme
+
+        assertSnapshot(
+            of: controller,
+            as: .image(on: config.device),
+            named: config.name,
+            record: true
+        )
+    }
 }
 
 enum Device {
