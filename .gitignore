@@ -1,0 +1,55 @@
+# macOS
+.DS_Store
+
+# Xcode user data
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Build products
+build/
+DerivedData/
+*.o
+*.LinkFileList
+*.hmap
+
+# iOS specific
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+*.xcodeproj/project.xcworkspace/xcuserdata
+
+# CocoaPods
+Pods/
+Podfile.lock
+*.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Firebase / Crashlytics
+GoogleService-Info.plist
+.crashlytics/
+.crashlytics-build/
+
+# Temporary files
+*.swp
+*.lock
+*.tmp
+*.orig
+
+# Ignore Xcode project & schemes
+*.xcodeproj
+*.xcscheme
