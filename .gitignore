@@ -49,7 +49,3 @@ GoogleService-Info.plist
 *.lock
 *.tmp
 *.orig
-
-# Ignore Xcode project & schemes
-*.xcodeproj
-*.xcscheme
